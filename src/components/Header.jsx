@@ -8,12 +8,12 @@ const Header = () => {
       <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
         <a href="#" className="flex items-center space-x-3">
           <img src="/logo.png" className="h-24" alt="Logo" />
-          <div className="grid place-items-center">
+          <div className="hidden sm:grid place-items-center">
             <span className="self-center text-2xl font-semibold whitespace-nowrap text-gray-900">
               Climatización
             </span>
             <span className="self-center text-2xl font-semibold whitespace-nowrap text-gray-900">
-              Q&D
+              P&D
             </span>
           </div>
         </a>
@@ -74,7 +74,7 @@ const Header = () => {
           </a>
         </div>
         <button
-          onClick={() => setAbrir(true)}
+          onClick={() => setAbrir(!abrir)}
           type="button"
           className="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
           aria-controls="navbar-multi-level"
@@ -97,7 +97,8 @@ const Header = () => {
             />
           </svg>
         </button>
-        <button className="  bg-blue-600 text-white hover:bg-blue-700 px-6 py-3 rounded-full">
+
+        <button className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-3 rounded-full">
           Contacto
         </button>
       </div>

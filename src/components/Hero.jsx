@@ -2,9 +2,9 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="relative overflow-hidden">
-      <div className="relative bg-gradient-to-b from-blue-700 to-blue-400 text-white py-20">
-        <div className="container mx-auto text-center">
+    <div className="relative overflow-hidden ">
+      <div className="relative bg-gradient-to-b from-blue-700 to-blue-400 text-white py-8">
+        <div className="container mx-auto text-center p-4">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6">
             Expertos en Climatización para
             <br />
@@ -18,7 +18,7 @@ const Hero = () => {
             Conoce Más →
           </button>
         </div>
-        <div className="container mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-8">
           {[
             {
               imgSrc: "/1.jpg",
@@ -43,14 +43,14 @@ const Hero = () => {
             {
               imgSrc: "/4.jpg",
               imgAlt: "Asesoría Energética",
-              title: "Asesoría Energética",
+              title: "Proyectos HVAC",
               description:
                 "Soluciones para maximizar la eficiencia energética de tu hogar o negocio.",
             },
           ].map((service, index) => (
             <div
               key={index}
-              className="p-6 bg-white rounded-3xl shadow-md hover:shadow-xl transition-shadow duration-300 text-center"
+              className="p-6 bg-white rounded-3xl shadow-md hover:shadow-xl transition-shadow duration-300 text-center "
             >
               <div className="mb-4 flex justify-center">
                 <img
